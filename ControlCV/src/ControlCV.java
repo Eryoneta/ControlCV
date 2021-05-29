@@ -50,7 +50,7 @@ public class ControlCV{
 	public ControlCV(){
 		try{
 			SystemTray.getSystemTray().add(new TrayIcon(ImageIO.read(getClass().getResource("Icone.png")),"Control+Copy/Paste",new PopupMenu(){{
-				add(new MenuItem("Sair"){{
+				add(new MenuItem("Exit"){{
 					addActionListener(new ActionListener(){
 					    public void actionPerformed(ActionEvent e){
 					        System.exit(0);
@@ -59,7 +59,7 @@ public class ControlCV{
 				}});
 			}}));
 		}catch(AWTException|IOException erro){
-			JOptionPane.showMessageDialog(null,"Erro ao carregar Ícone!\n"+erro,"Error",JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,"Error! Can't load icon!\n"+erro,"Error",JOptionPane.ERROR_MESSAGE);
 			System.exit(0);
 		}
 		long tempoUltimoLoop=System.nanoTime();
