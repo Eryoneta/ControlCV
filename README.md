@@ -7,4 +7,4 @@ Drag the cursor to the top-left corner of the screen. There will appear options 
 You can close the program by right-clicking it's icon on the taskbar.
 
 ## Installation
-Provided you have the latest Java Runtime Environment (JRE) version installed, it can be simply loaded and will be ready to use.
+Provided you have Java Runtime Environment (JRE) installed, it can be simply loaded and will be ready to use.
